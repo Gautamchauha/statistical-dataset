@@ -56,7 +56,7 @@ def main():
             if stat_tool == "Chi-Square Test" and len(categorical_columns) >= 2:
                 cat_col1 = st.selectbox("📂 Select first categorical column", categorical_columns, key="chi1")
                 cat_col2 = st.selectbox("📂 Select second categorical column", categorical_columns, key="chi2")
-                if st.button("🔍 Run Chi-Square Test"):
+                if st.button(" Run Chi-Square Test"):
                     contingency_table = pd.crosstab(df[cat_col1], df[cat_col2])
                     chi2, p, dof, expected = stats.chi2_contingency(contingency_table)
                     st.success(f"Chi-Square Statistic: {chi2:.4f}, Degrees of Freedom: {dof}, P-Value: {p:.4f}")
