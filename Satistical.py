@@ -5,6 +5,9 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# 🛠 Set Page Configuration (MUST BE FIRST)
+st.set_page_config(page_title="Excel Statistical Analysis", layout="wide")
+
 # Inject Tailwind CSS
 TAILWIND_CSS = """
 <style>
