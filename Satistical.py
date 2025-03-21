@@ -21,16 +21,6 @@ TAILWIND_CSS = """
 """
 st.markdown(TAILWIND_CSS, unsafe_allow_html=True)
 
-# Function to render Power BI report
-def render_powerbi_report():
-    st.markdown("""
-        <div class="p-6 bg-white shadow-md rounded-lg">
-            <h2 class="text-xl font-semibold text-gray-700">Power BI Visualization</h2>
-            <iframe width="100%" height="600" class="rounded-lg border" 
-            src="https://app.powerbi.com/view?r=eyJrIjoiNzhlNDc1NzEtMzVlYi00M2ZhLTg4NTktNTc5MDAwZTI0NTRkIiwidCI6ImRmNTRjNDdhLTk2OWMtNGVhNi1iMmI0LWUxZmM3NmE0MjE3MyJ9" 
-            frameborder="0" allowFullScreen="true"></iframe>
-        </div>
-    """, unsafe_allow_html=True)
 
 def main():
     # Navigation menu
@@ -85,8 +75,7 @@ def main():
                     chi2, p, dof, expected = stats.chi2_contingency(contingency_table)
                     st.success(f"Chi-Square Statistic: {chi2:.4f}, Degrees of Freedom: {dof}, P-Value: {p:.4f}")
 
-    elif selected_page == "Visualization":
-        render_powerbi_report()
+
 
 if __name__ == "__main__":
     main()
