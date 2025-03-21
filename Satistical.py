@@ -23,6 +23,8 @@ st.markdown(TAILWIND_CSS, unsafe_allow_html=True)
 
 
 def main():
+     # Navigation menu
+    selected_page = st.sidebar.radio("Select Page", ["Statistical Analysis"])
 
     if selected_page == "Statistical Analysis":
         st.markdown('<h1 class="text-3xl font-bold text-gray-800 mb-4">Excel Statistical Analysis Tool</h1>', unsafe_allow_html=True)
