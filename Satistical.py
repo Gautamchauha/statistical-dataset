@@ -79,3 +79,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+# Footer with Copyright Information
+st.markdown(
+    """
+    <hr style="border:1px solid gray;margin-top:20px;margin-bottom:10px;">
+    <div style="text-align:center;">
+        <p>© 2025 AI-Powered Dynamic Dependency Analyzer. All rights reserved.</p>
+        <p>Developed by [Your Name or Company].</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
