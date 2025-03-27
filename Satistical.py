@@ -4,7 +4,17 @@ import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+# Footer with Copyright Information
+st.markdown(
+    """
+    <hr style="border:1px solid gray;margin-top:20px;margin-bottom:10px;">
+    <div style="text-align:center;">
+        <p>© 2025 All rights reserved.</p>
+        <p>Developed by Himistu Lab.</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # 🛠 Set Page Configuration (MUST BE FIRST)
 st.set_page_config(page_title="Excel Statistical Analysis", layout="wide")
 
